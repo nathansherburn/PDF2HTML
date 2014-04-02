@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>PDF Journal to Webpage</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="javascript" src="script.js"></script>
+<body>
+	<div id="container">
+		<div id="title-bar">
+			PDF Journal to Webpage
+		</div>
+		<div id="main-box">
+		<form enctype="multipart/form-data" action="upload.php" method="POST">
+			Choose Journal Article:<br/><br/>
+			<div class="inputs">
+			<input name="userfile" type="file" id="file" /><br/>
+			<input type="submit" value="Create Website" onclick="showLoader()" style="float: right;" />
+			</div>
+		</form>
+		</div>
+		<div id="loader">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>hello</title>
+	</head>
+	<body style="text-align: center;">
+		This page has loaded
+		<br/><br/>
+		<form action="script.php" method="get">
+			<input type="submit" value="Convert">
+		</form>
+	</body>
+</html>

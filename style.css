@@ -1,0 +1,64 @@
+body {
+	color: black;
+	background-color: #EEEEEE;
+	font-family: sans-serif;
+}
+
+#container {
+	width: 600px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 6px #AAAAAA;
+}
+
+#title-bar {
+	background-color: #64acc4;
+	color: white;
+	font-weight: bold;
+	padding: 3px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	text-align: center;
+}
+
+#main-box {
+	background-color: white;
+	padding: 20px;
+}
+
+.inputs {
+	height: 34px;
+}
+
+#loader {
+	display: none;
+	width: 100px;
+	height: 4px;
+	background: #AAAAAA;
+	position: relative;
+	animation: mymove 0.5s infinite;
+	-webkit-animation: mymove 0.5s infinite; /*Safari and Chrome*/
+}
+
+@keyframes mymove {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes mymove {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+}	
