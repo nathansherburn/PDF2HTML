@@ -1,25 +1,41 @@
-<html>
-<head>
-	<title>PDF Journal to Webpage</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script language="javascript" src="script.js"></script>
-<body>
-	<div id="container">
-		<div id="title-bar">
-			PDF Journal to Webpage
-		</div>
-		<div id="main-box">
-		<form enctype="multipart/form-data" action="upload.php" method="POST">
-			Choose Journal Article:<br/><br/>
-			<div class="inputs">
-			<input name="userfile" type="file" id="file" /><br/>
-			<input type="submit" value="Create Website" onclick="showLoader()" style="float: right;" />
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PDF to Website</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="//use.edgefonts.net/lato.js"></script> 
+		<script language="javascript" src="script.js"></script>
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+			<script>
+				$(function() {
+				$( "#progressbar" ).progressbar({
+				value: false
+				});
+ 			</script>
+
+	<body>
+		<div id="container">
+			<div id="title-bar">
+				<img src="images/ewb-logo.png" alt="logo" />
+				<span style="float:right;">PDF to Website</span>
 			</div>
-		</form>
+			<div id="divider"></div>
+			<div id="main-box">
+				<form enctype="multipart/form-data" action="upload.php" method="POST">
+					Choose Journal Article:<br/><br/>
+					<div class="inputs">
+					<input name="userfile" type="file" id="file" /><br/>
+					<input type="submit" value="Create Website" onclick="drawszlider()" style="float: right;" />
+					</div>
+				</form>
+			</div>
+			<div id="progressbar"></div>
 		</div>
-		<div id="loader">
-		</div>
-	</div>
-</body>
+	</body>
 </html>

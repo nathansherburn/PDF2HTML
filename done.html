@@ -1,20 +1,25 @@
-<html>
-<head>
-	<title>PDF Journal to Webpage</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-<body>
-	<div id="container">
-		<div id="title-bar">
-			PDF Journal to Webpage
-		</div>
-		<div id="main-box">
-			All done!<br/><br/>
-			<div class="inputs">
-				<input type="button" onclick="parent.location='webversions/page.html'" value="Preview Site" style="float: right;">
-				<input type="button" onclick="parent.location='webversions/website.zip'" value="Download Site" style="float: right;">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PDF Journal to Webpage</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		 <script src="//use.edgefonts.net/lato.js"></script> 
+		<script language="javascript" src="done_script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="title-bar">
+				PDF Journal to Webpage
+			</div>
+			<div id="main-box">
+				All done!<br/><br/>
+				<div class="inputs">
+					<input type="button" onclick="getPreview()" value="Preview Site" style="float: right;">
+					<input type="button" onclick="getDownload()" value="Download Site" style="float: right;">
+				</div>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>

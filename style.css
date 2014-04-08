@@ -1,23 +1,29 @@
 body {
-	color: black;
+	color: #555555;
 	background-color: #EEEEEE;
-	font-family: sans-serif;
+	font-family: lato, sans-serif;
 }
 
 #container {
 	width: 600px;
-	margin: 0 auto;
+	margin: 100px auto;
 	box-shadow: 2px 2px 6px #AAAAAA;
+	border: 0px solid;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 
 #title-bar {
-	background-color: #64acc4;
-	color: white;
+	background-color: white;
 	font-weight: bold;
-	padding: 3px;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	text-align: center;
+	padding: 20px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+#divider {
+	background-color: #39B54A;
+	height: 1px;
 }
 
 #main-box {
@@ -35,8 +41,8 @@ body {
 	height: 4px;
 	background: #AAAAAA;
 	position: relative;
-	animation: mymove 0.5s infinite;
-	-webkit-animation: mymove 0.5s infinite; /*Safari and Chrome*/
+	animation: mymove 60s infinite;
+	-webkit-animation: mymove 60s infinite; /*Safari and Chrome*/
 }
 
 @keyframes mymove {

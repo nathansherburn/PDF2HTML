@@ -1,7 +1,0 @@
-<?php
-	//echo "hello world";
-	echo "Your conversion has begun...<br/>";
-	exec("sudo /usr/local/bin/wrapper.sh");
-	echo "Your conversion is complete!<br/>";
-	echo "Please visit: <a href='/webversions'>webversions</a>";
-?>
