@@ -5,20 +5,8 @@
 		<title>PDF to Website</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<script src="//use.edgefonts.net/lato.js"></script> 
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<script language="javascript" src="script.js"></script>
-
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-
-			<script>
-				$(function() {
-				$( "#progressbar" ).progressbar({
-				value: false
-				});
- 			</script>
-
 	<body>
 		<div id="container">
 			<div id="title-bar">
@@ -29,13 +17,16 @@
 			<div id="main-box">
 				<form enctype="multipart/form-data" action="upload.php" method="POST">
 					Choose Journal Article:<br/><br/>
+						<input name="userfile" type="file" id="file" /><br/>
 					<div class="inputs">
-					<input name="userfile" type="file" id="file" /><br/>
-					<input type="submit" value="Create Website" onclick="drawszlider()" style="float: right;" />
+						<input type="submit" value="Create Website" style="position: relative; bottom: 0; right: 0;" />
 					</div>
 				</form>
 			</div>
-			<div id="progressbar"></div>
 		</div>
+		<script src="js/awty.min.js"></script>
+		<script language="javascript">
+			awty.add();
+		</script>
 	</body>
 </html>

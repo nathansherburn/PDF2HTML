@@ -1,7 +1,7 @@
 body {
 	color: #555555;
 	background-color: #EEEEEE;
-	font-family: lato, sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 #container {
@@ -9,16 +9,15 @@ body {
 	margin: 100px auto;
 	box-shadow: 2px 2px 6px #AAAAAA;
 	border: 0px solid;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-radius: 5px;
 }
 
 #title-bar {
 	background-color: white;
 	font-weight: bold;
 	padding: 20px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #divider {
@@ -29,10 +28,13 @@ body {
 #main-box {
 	background-color: white;
 	padding: 20px;
+	width: 560px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .inputs {
-	height: 34px;
+	text-align: right;
 }
 
 #loader {
@@ -61,6 +63,18 @@ body {
 	to {
 		width: 100%;
 	}
+}
+
+.awty-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    width: 0;
+    height: 5px;
+    z-index: 9999;
+    transition: width 1s ease,
+                height .2s ease;
 }
 
 @media screen and (max-width: 600px) {
