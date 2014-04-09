@@ -1,3 +1,3 @@
 function showLoader() {
-   document.getElementById('loader').style.display = "block";
+   var animation = document.getElementById('bubblingG').style.display = "block";
 }
